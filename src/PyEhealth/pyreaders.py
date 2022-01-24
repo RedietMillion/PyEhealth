@@ -4,7 +4,7 @@ This Module contain tools for reading different files(dataset) format .
 import csv
 import pyreadstat as ps
 import pandas as pd 
-import ijson
+#import ijson
 import json
 from csv import reader
 
@@ -29,7 +29,7 @@ def list_columns(filename):
     >>>list_columns( "../ETBR71SV/ETBR71DT/ETBR71FL.DTA")
     """   
 
-    if filename.endswith('.csv') or filename.endswith('.CSV') :
+    if filename.endswith('.csv') or filename.endswith('.CSV'):
         with open(filename, "r") as f:
             reader = csv.reader(f)
             col_csv = next(reader)
@@ -45,10 +45,9 @@ def list_columns(filename):
     else:
         return "Your file format type doesn't included to the package yet"
 
-    
 def load_data(filename, columns_list= None, the_first = None, the_last= None):
     
-     """ 
+    """ 
     It read and load different dataset formats into DataFrame. 
     Also support optionally to load specified list of columns only.
     Additionaly help us to load the first or the last specified number
@@ -137,3 +136,5 @@ def load_data(filename, columns_list= None, the_first = None, the_last= None):
             df,meta = ps.read_sav(filename)
             return df
     
+        
+   
