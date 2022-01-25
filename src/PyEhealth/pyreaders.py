@@ -46,7 +46,6 @@ def list_columns(filename):
         return "Your file format type doesn't included to the package yet"
 
 def load_data(filename, columns_list= None, the_first = None, the_last= None):
-    
     """ 
     It read and load different dataset formats into DataFrame. 
     Also support optionally to load specified list of columns only.
@@ -135,6 +134,3 @@ def load_data(filename, columns_list= None, the_first = None, the_last= None):
             
             df,meta = ps.read_sav(filename)
             return df
-    
-        
-   
