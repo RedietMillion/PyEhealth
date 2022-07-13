@@ -1,6 +1,8 @@
 # PyEhealth
 
-Python Package for Ethiopia Health System
+Python Package for Ethiopia Health System.
+
+The main goal of this project is to develope  a comprehensive data science python library package that provides an  easy access to different data analytic and machine learning techniques and help public health and medical researchers to synthesize and utilize evidence generation methods using standard data science procedures on health-related datasets.
 
 ## Installation
 

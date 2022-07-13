@@ -1,5 +1,5 @@
 """
-This Module contain tools for reading different files(dataset) format .
+This Module contain tools for reading different files(dataset) format.
 """
 import csv
 import pyreadstat as ps
